@@ -33,6 +33,7 @@ class Solution {
         while(curr != null){
             next = curr.next;   // save the next
             curr.next = prev;   // reverse next and previous
+            
             prev = curr;        //
             curr = next;        // advance previous and current
         }
