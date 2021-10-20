@@ -24,7 +24,7 @@ class Solution {
     //longest path in the tree would consist of a node, its longest left branch, and its longest right branch
     //our algorithm to solve this problem will find the node where the sum of its longest left and right branches is maximized
         
-    public int maxPath;
+    public int maxPath=0;
     
     public int longestPath(TreeNode root) {
         if (root==null) {
@@ -43,7 +43,6 @@ class Solution {
     }
     
     public int diameterOfBinaryTree(TreeNode root) {
-        maxPath = 0;
         longestPath(root);
         return maxPath;
     }    
