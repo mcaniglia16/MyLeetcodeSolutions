@@ -1,4 +1,5 @@
 class Solution {
+    //Not really dynamic programming, but ok...
     public int maxProfit(int[] prices) {
         int min = Integer.MAX_VALUE;
         int maxProfit = 0;
