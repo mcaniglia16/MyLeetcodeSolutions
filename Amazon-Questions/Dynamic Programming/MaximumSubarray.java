@@ -1,6 +1,6 @@
 class Solution {
     public int maxSubArray(int[] nums) {
-        Solution 1: Brute force O(n^2) time 
+        // Solution 1: Brute force O(n^2) time 
         int max = Integer.MIN_VALUE;
         for (int i=0; i<nums.length; i++) {
             int currSum = nums[i];
