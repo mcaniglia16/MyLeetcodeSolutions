@@ -11,9 +11,10 @@ class Solution {
     }
     
     public void dfs(int[][] image, int i, int j, int color, int newColor) {
-        if (i >  image.length-1 || i < 0 || j > image[i].length-1 || j < 0 || image[i][j] != color) {
+        if (i >= image.length || i < 0 || j >= image[i].length || j < 0 || image[i][j] != color) {
             return;
         }
+        
         image[i][j] = newColor;
         
         dfs(image, i-1, j, color, newColor);
