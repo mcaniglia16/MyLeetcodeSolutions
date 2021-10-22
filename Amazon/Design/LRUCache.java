@@ -65,7 +65,7 @@ public class LRUCache {
       if (node == null) return -1;
   
       // move the accessed node to the head;
-      moveToHead(node);
+      moveToHead(node); //remove -> add
   
       return node.value;
     }
@@ -92,7 +92,7 @@ public class LRUCache {
       } else {
         // update the value.
         node.value = value;
-        moveToHead(node);
+        moveToHead(node);  //remove -> add
       }
     }
   }
