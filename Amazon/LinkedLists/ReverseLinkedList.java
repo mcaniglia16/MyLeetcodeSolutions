@@ -29,7 +29,7 @@ class Solution {
         // Method 1) iterative, O(N) time , O(1) space
         ListNode curr = head;
         ListNode prev = null;
-        ListNode next = null;
+        ListNode next = null;   // serves as our "temp"
         while(curr != null){
             next = curr.next;   // save the next
             curr.next = prev;   // reverse next and previous
@@ -40,7 +40,7 @@ class Solution {
         return prev;
 
         ////////////////////////////////////////////////////////////////
-        
+
         //Method 2) recursive, O(N) time, O(N) space (stack)
         // if (head == null || head.next == null) {
         //     return head;
